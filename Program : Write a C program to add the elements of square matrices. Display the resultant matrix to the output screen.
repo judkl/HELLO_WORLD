@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main()
+{
+    int matrix1[3][3],matrix2[3][3],summatrix[3][3];
+    
+    printf("enter the numbers in matrix 1 \n");
+    
+    for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            scanf("%d",&matrix1[i][j]);
+        }
+    }
+    printf("numbers in marix 1 is =\n");
+    for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            printf("%2d",matrix1[i][j]);
+        }
+        printf("\n");
+    }
+
+printf("enter the numbers in matrix 2nd \n");
+for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            scanf("%d",&matrix2[i][j]);
+        }
+    }
+    
+    printf("elements in 2nd matrix \n");
+    for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            printf("%2d",matrix2[i][j]);
+        }
+        printf("\n");
+    }
+    
+   printf("the su of both matrix is \n");
+    for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            summatrix[i][j]=matrix1[i][j] + matrix2[i][j];
+             printf("%3d",summatrix[i][j]);
+                    
+        }
+
+        printf("\n"); 
+        
+    
+    }
+    
+   
+    
+}
+
